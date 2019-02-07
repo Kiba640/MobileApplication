@@ -9,7 +9,7 @@
     <script>
         function myFunction(x) {
             x.classList.toggle("change");
-        document.getElementById(searchNav).classList.toggle("open");
+        document.getElementById(navbarMenuSearch).classList.toggle("open");
 
 }
     </script>
@@ -19,11 +19,12 @@
             Github is working!
         </h1>
         <div class="navbar">
-            <a href="#" class="searchNav"><span class="fa fa-search" style="font-size:8vw;"></span><p>Search</p></a>
-            <a href="#" class="genreNav"><span class="fa fa-gamepad" style="font-size:8vw;"></span><p>Genre</p></a>
-            <a href="#" class="ratingsNav"><span class="fa fa-star-half" style="font-size:8vw;"></span><p>Rating</p></a>
-            <a href="#" class="familyratingClass"><span class="fa fa-child" style="font-size:8vw;"></span><p>Family Rating</p></a>
+            <a href="#" class="search"><span class="fa fa-search" style="font-size:8vw;" onclick="myFunction(this)"></span><p>Search</p></a>
+            <a href="#" class="genre"><span class="fa fa-gamepad" style="font-size:8vw;"></span><p>Genre</p></a>
+            <a href="#" class="ratings"><span class="fa fa-star-half" style="font-size:8vw;"></span><p>Rating</p></a>
+            <a href="#" class="familyrating"><span class="fa fa-child" style="font-size:8vw;"></span><p>Family Rating</p></a>
           </div>
+        <div id="navbarMenuSearch"></div>
     </body>
     <!-- <footer> -->
     <!-- </footer> -->

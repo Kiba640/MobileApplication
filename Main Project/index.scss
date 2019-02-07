@@ -46,21 +46,26 @@
       font-size: 40px;
   }
   /* Nav Menu */
+
+//   Mixin for the nav menu screen
   @mixin navMenu {
-    height: 100%;
-  width: 0;
+  height: 0;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgb(255, 255, 255);
   overflow-x: hidden;
   transition: 0.4s;
   padding-top: 60px;
   z-index: 1;
   &.open {
-      width: 250px;
+      height: 100vh;
   }
 } 
+.navbarMenuSearch{
+    @include navMenu()
+}
 /* Landing Page */
 body{
     background-color: rgb(18, 17, 22);
