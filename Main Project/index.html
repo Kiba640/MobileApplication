@@ -6,16 +6,23 @@
         <script></script>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        document.getElementById(searchNav).classList.toggle("open");
+
+}
+    </script>
     </head>
     <body>
         <h1 class="main">
             Github is working!
         </h1>
         <div class="navbar">
-            <a href="#" class="active"><span class="fa fa-save" style="font-size:8vw;"></span>Home</a>
-            <a href="#"><span class="fa fa-save" style="font-size:8vw;"></span>News</a>
-            <a href="#"><span class="fa fa-save" style="font-size:8vw;"></span>Contact</a>
-            <a href="#"><span class="fa fa-save" style="font-size:8vw;"></span>Search</a>
+            <a href="#" class="searchNav"><span class="fa fa-search" style="font-size:8vw;"></span><p>Search</p></a>
+            <a href="#" class="genreNav"><span class="fa fa-gamepad" style="font-size:8vw;"></span><p>Genre</p></a>
+            <a href="#" class="ratingsNav"><span class="fa fa-star-half" style="font-size:8vw;"></span><p>Rating</p></a>
+            <a href="#" class="familyratingClass"><span class="fa fa-child" style="font-size:8vw;"></span><p>Family Rating</p></a>
           </div>
     </body>
     <!-- <footer> -->
