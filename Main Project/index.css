@@ -1,5 +1,5 @@
 /* TODO
-        Convert to SCSS otherwise the navbar menus will get complicated
+        
 */
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
@@ -13,7 +13,9 @@
   width: 100%;
   font-family: "Open Sans", "Calibri", serif;
   padding-left: 0;
-  margin-left: 0; }
+  margin-left: 0;
+  position: fixed;
+  z-index: 5; }
 
 /* Style the links inside the navigation bar */
 .navbar a {
@@ -41,23 +43,74 @@
   font-size: 40px; }
 
 /* Nav Menu */
-.navbarMenuSearch {
-  height: 0;
-  width: 100%;
+.searchMenu {
+  height: 0px;
   position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
+  width: 100%;
+  bottom: 0;
+  background-color: #212024;
   overflow-x: hidden;
   transition: 0.4s;
-  padding-top: 60px;
   z-index: 1; }
-  .navbarMenuSearch.open {
+  .searchMenu.open {
     height: 100vh; }
+  .searchMenu.close {
+    height: 0vh; }
+
+.genreMenu {
+  height: 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #212024;
+  overflow-x: hidden;
+  transition: 0.4s;
+  z-index: 1; }
+  .genreMenu.open {
+    height: 100vh; }
+  .genreMenu.close {
+    height: 0vh; }
+
+.ratingsMenu {
+  height: 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #212024;
+  overflow-x: hidden;
+  transition: 0.4s;
+  z-index: 1; }
+  .ratingsMenu.open {
+    height: 100vh; }
+  .ratingsMenu.close {
+    height: 0vh; }
+
+.famRatingsMenu {
+  height: 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #212024;
+  overflow-x: hidden;
+  transition: 0.4s;
+  z-index: 1; }
+  .famRatingsMenu.open {
+    height: 100vh; }
+  .famRatingsMenu.close {
+    height: 0vh; }
 
 /* Landing Page */
 body {
   background-color: #121116;
   margin: 0; }
+
+#searchTest {
+  color: green;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 5vh; }
+
+ul {
+  list-style-type: none; }
 
 /*# sourceMappingURL=index.css.map */

@@ -6,26 +6,56 @@
         <script></script>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        document.getElementById(navbarMenuSearch).classList.toggle("open");
-
-}
-    </script>
+    
     </head>
     <body>
         <h1 class="main">
             Github is working!
         </h1>
+        <!-- <div id="navbarMenuSearch" class="searchMenu"></div> -->
         <div class="navbar">
-            <a href="#" class="search"><span class="fa fa-search" style="font-size:8vw;" onclick="myFunction(this)"></span><p>Search</p></a>
-            <a href="#" class="genre"><span class="fa fa-gamepad" style="font-size:8vw;"></span><p>Genre</p></a>
-            <a href="#" class="ratings"><span class="fa fa-star-half" style="font-size:8vw;"></span><p>Rating</p></a>
-            <a href="#" class="familyrating"><span class="fa fa-child" style="font-size:8vw;"></span><p>Family Rating</p></a>
+            <a href="#" class="search"><span class="fa fa-search" style="font-size:8vw;" onclick="viewSearch(this)"></span><p>Search</p></a>
+            <a href="#" class="genre"><span class="fa fa-gamepad" style="font-size:8vw;" onclick="viewGenre(this)"></span><p>Genre</p></a>
+            <a href="#" class="ratings"><span class="fa fa-star-half" style="font-size:8vw;" onclick="viewRatings(this)"></span><p>Rating</p></a>
+            <a href="#" class="familyrating"><span class="fa fa-child" style="font-size:8vw;" onclick="viewFamRatings(this)"></span><p>Family Rating</p></a>
           </div>
-        <div id="navbarMenuSearch"></div>
+          <div id="navbarMenuSearch" class="searchMenu">
+            <ul>
+                <li>
+                    <a href="#" id="searchTest">Search Menu should be working</a>
+                </li>
+            </ul>  
+            
+          </div>
+          <div id="navbarMenuGenre" class="genreMenu">
+                <ul>
+                    <li>
+                        <a href="#" id="searchTest">Genre Menu should be working</a>
+                    </li>
+                </ul>  
+                
+              </div>
+            
+              <div id="navbarMenuRatings" class="ratingsMenu">
+                    <ul>
+                        <li>
+                            <a href="#" id="searchTest">Ratings Menu should be working</a>
+                        </li>
+                    </ul>  
+                    
+                  </div>
+                  <div id="navbarMenuFamRatings" class="famRatingsMenu">
+                        <ul>
+                            <li>
+                                <a href="#" id="searchTest">Family Ratings Menu should be working</a>
+                            </li>
+                        </ul>  
+                        
+                      </div>
+        
     </body>
+    <script src="index.js">
+    </script>
     <!-- <footer> -->
     <!-- </footer> -->
 </html>
