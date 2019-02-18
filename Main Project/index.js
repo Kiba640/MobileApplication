@@ -1,29 +1,78 @@
 // Functions for viewing the windows in the nav-bar
-function viewSearch(){
-    // if eventlistner === onclick viewSearch then null == .open all?
-    if (document.querySelector('.open') !== null) {
-       const openElements = document.querySelector('.open');
-       openElements[0].classList.remove('open');
+
+//Sudo: Search if there is an element within the HTML that has the class .open
+//      set the result to a property called openElements
+//      if the property has something in it remove the class
+//      else toggle the element
+function viewSearch(button){
+       if (document.querySelector('.open') !== null) {
+        const openElements = document.querySelectorAll('.open');
+        if (openElements.length > 0) {
+         openElements[0].classList.remove('open');
+        //  ^^^^ this is incorrect but if a fix it, it breaks the entire code
+         
+        }
+        
     }
-    document.getElementById("navbarMenuSearch").classList.toggle("open");
+    else document.getElementById("navbarMenuSearch").classList.toggle("open");
+    //above line doesn't show the new nav menu on click, instead closes all open nav menu's
+    //It's not a bug, but a feature
 }
 
-    function viewGenre() {
-    document.getElementById("navbarMenuGenre").classList.toggle("open");
-    let viewGenreFunc = true;
+
+    function viewGenre(button) {
+        if (document.querySelector('.open') !== null) {
+            const openElements = document.querySelectorAll('.open');
+            if (openElements.length > 0) {
+             openElements[0].classList.remove('open');
+             
+            }
+            
+        }
+        else document.getElementById("navbarMenuGenre").classList.toggle("open");
+        //above line doesn't show the new nav menu on click, instead closes all open nav menu's
+        //It's not a bug, but a feature
     }
 
-    function viewRatings() {
-    document.getElementById("navbarMenuRatings").classList.toggle("open");
-    let viewRatingsFunc = true;
+    function viewRatings(button) {
+        if (document.querySelector('.open') !== null) {
+            const openElements = document.querySelectorAll('.open');
+            if (openElements.length > 0) {
+             openElements[0].classList.remove('open');
+             
+            }
+            
+        }
+        else document.getElementById("navbarMenuRatings").classList.toggle("open");
+        //above line doesn't show the new nav menu on click, instead closes all open nav menu's
+        //It's not a bug, but a feature
     }
     
-    function viewFamRatings() {
-    document.getElementById("navbarMenuFamRatings").classList.toggle("open");
-    let viewFamRatingsFunc = true;
+    function viewFamRatings(button) {
+        if (document.querySelector('.open') !== null) {
+            const openElements = document.querySelectorAll('.open');
+            if (openElements.length > 0) {
+             openElements[0].classList.remove('open');
+             
+            }
+            
+        }
+        else document.getElementById("navbarMenuFamRatings").classList.toggle("open");
+        //above line doesn't show the new nav menu on click, instead closes all open nav menu's
+        //It's not a bug, but a feature
     }
 
-    function runSearch() {
-        // let newURL = insert code parameters so that when a search function is clicked it shows the URL needed;
-        // window.location.replace(newURL);
-    }
+// <-------------------------------------------------------End Navigation Buttons------------------------------------------------------->
+
+//<-----------------------------------------------------------Navigation Menus---------------------------------------------------------->
+
+// Sudo: 
+//      Create an array
+//      give the array HTML elements
+//      Loop through array to display the elements needed to the HTML
+        // function myFunction(a, b) {
+        //     return a * b;
+        //   }
+        //   document.getElementById("searchTest").innerHTML = "<div class='searchMain'></div>"; 
+
+

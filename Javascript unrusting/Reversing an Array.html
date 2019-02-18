@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Reversing an Array</title>
+
+<script type="text/javascript">
+function app(list) {
+var list = [3.4, -2, 5, 7, 12];
+ 	var listorig= list.slice(0,list.length+1);
+	var total = reverse(list);
+	document.getElementById('outputDiv').innerHTML = "Original array is " + listorig + "<br> <br>" + "reversed array is" + "<br>" + total;
+	}
+	
+	function reverse(list2){
+		var total = ""
+		var left = 0;
+		var right = list2.length - 1;
+   while (left < right) {
+        // Exchange two elements.
+    var swap = list2[left];
+        list2[left] = list2[right];
+        list2[right] = swap;
+
+        // Swap the indexes -2 and 7.
+        left++;
+        right--;
+		
+    }
+	for (var i=0; i<=list2.length-1; i++){
+	total += list2[i] + "<br>"
+	}
+	return total;
+}
+
+ 
+</script>
+</head>
+
+<body>
+<button type="button" onclick="app()">Fill Numbers</button>
+<div id="outputDiv"></div>  
+</body>
+</html>

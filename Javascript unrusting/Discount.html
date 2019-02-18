@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Discount</title>
+
+<script type="text/javascript">
+
+function calcDiscount() {
+    var total = parseFloat(document.getElementById('integerInputBox').value);
+	
+	var discount;
+    if (total < 100) {
+        discount = 0.10;
+    }
+    else if (total < 250) {
+        discount = 0.15;
+    }
+    else if (total < 400) {
+        discount = 0.18;
+    }
+    else {
+        discount = 0.20;
+    }
+	var discAmount= total * discount;
+    total *= (1 - discount);
+	
+	var output = "Total Cost: " + total + "<br>" + "Discount Rate: " + discount +"<br>" + "Discount Amount " + discAmount;
+	 total = Math.round ((total*100)/100);
+	
+    document.getElementById('outputDiv').innerHTML = output;
+}
+</script>
+</head>
+
+<body>                      
+Please enter the total amount: <input type="text" id="integerInputBox">
+<button type="button" onclick="calcDiscount()">Discount</button>
+<div id="outputDiv"></div>              
+</body>         
+</html>

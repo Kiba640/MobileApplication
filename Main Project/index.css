@@ -99,11 +99,6 @@
   .famRatingsMenu.close {
     height: 0vh; }
 
-/* Landing Page */
-body {
-  background-color: #121116;
-  margin: 0; }
-
 #searchTest {
   color: green;
   text-decoration: none;
@@ -112,5 +107,73 @@ body {
 
 ul {
   list-style-type: none; }
+
+/* Landing Page */
+body {
+  background-color: #121116;
+  margin: 0;
+  color: rgba(218, 231, 214, 0.678); }
+
+.genreMenu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 3vh;
+  flex-wrap: wrap; }
+
+.genreList li {
+  flex: 1 0 30%;
+  /* explanation below */
+  margin: 5px; }
+
+#Adventure {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #dddddd; }
+  #Adventure p {
+    padding-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 6vw; }
+
+#Adventure > span {
+  font-size: 15vw; }
+
+#Action {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #dddddd; }
+  #Action p {
+    padding-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 6vw; }
+
+#Action > span {
+  font-size: 15vw; }
+
+#Sports {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #dddddd; }
+  #Sports p {
+    padding-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 6vw; }
+
+#Sports > span {
+  font-size: 15vw; }
 
 /*# sourceMappingURL=index.css.map */

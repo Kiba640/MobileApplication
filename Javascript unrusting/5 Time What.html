@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>5 X ? = ?</title>
+<script type="text/javascript">
+/* Input: Click Button
+* Processing: 
+* Output: 5*1=5 ---> 5*12=60
+*/
+ function test() {
+ var output = '';
+    var i = 1;
+	
+    for (var i = 1; i<= 12; i++) {
+         var ans = 5 * i;
+		 output += "5 x " + i + " = " + ans + "<br>";
+    }
+	document.getElementById('displayDiv').innerHTML = output;
+	}
+    
+</script>
+</head>
+<body>
+<button type="button" onclick="test()">output</button>
+<div id="displayDiv"></div>
+</body>
+</html>
