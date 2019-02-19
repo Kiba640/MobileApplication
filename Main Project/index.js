@@ -15,7 +15,7 @@ function viewSearch(button){
         
     }
     else document.getElementById("navbarMenuSearch").classList.toggle("open");
-    //above line doesn't show the new nav menu on click, instead closes all open nav menu's
+    //above code doesn't show the new nav menu on click, instead closes all open nav menu's
     //It's not a bug, but a feature
 }
 
