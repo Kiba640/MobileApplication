@@ -4,22 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Pokedex</title>
+  <title>Pokemon Type</title>
   <link href="styles.css" rel="stylesheet">
-  
+
+
 </head>
 
 <body>
+  <h1>Pokemon Type Effectivness Calculator</h1>
+  <!-- <h3>Enter Pokemon Name or Number</h3> -->
 
+  <div class="forms">
     <form id=pokeform>
-        <input id=pokenumber placeholder="Number of the pokemon"/>
-        <button type=submit>Go!</button>
-      </form>
-      
-      <h1 id=pokename></h1>
-      <img id="pokeimage"/>
-      <script src="script.js"></script>
-  
+      <input id=pokenumber1 onkeyup="this.value = this.value.toLowerCase();" placeholder="Name or Poke #" required />
+      <p>VS</p>
+      <input id=pokenumber2 onkeyup="this.value = this.value.toLowerCase();" placeholder="Name or Poke #" required />
+      <button type=submit>Battle!</button>
+    </form>
+  </div>
+  <div class="images">
+    <div class="pokemon_1">
+      <img id="pokeimage1" />
+      <h1 id=pokename1></h1>
+    </div>
+    <div class="pokemon_2">
+      <h1 id=pokename2></h1>
+      <img id="pokeimage2" />
+    </div>
+  </div>
+<div id="victorycondition"></div>
+  <ul id="abilitiesList"></ul>
+  <ul id="conditions"></ul>
+  <div class="fight-button">
+
+  </div>
+
+
+
 </body>
+<script src="script.js"></script>
 
 </html>

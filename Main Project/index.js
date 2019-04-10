@@ -9,7 +9,7 @@ function viewSearch(button){
         const openElements = document.querySelectorAll('.open');
         if (openElements.length > 0) {
          openElements[0].classList.remove('open');
-        //  ^^^^ this is incorrect but if a fix it, it breaks the entire code
+        //  ^^^^ this is incorrect but if I fix it, it breaks the entire code
          
         }
         

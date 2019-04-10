@@ -1,3 +1,93 @@
+h1 {
+    font-size: 5vw;
+    text-align: center;
+    padding-bottom: 5vh;
+}
 
+#pokename1 {
+    text-transform: capitalize;
+}
 
-/*# sourceMappingURL=styles.scss.map */
+#pokename2 {
+    text-transform: capitalize;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pokeimage2 {
+    margin-right: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.pokemon_1 {
+    margin-top: 15%;
+}
+
+input {
+    width: 25vw;
+}
+
+button {
+    align-self: flex-end;
+    // margin-left: 20%;
+    margin-left: 100%;
+    margin-right: 100%;
+}
+
+#pokeform {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+form p {
+    margin: 0;
+    padding: 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#pokename2 {
+    padding-bottom: 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    &>li {
+        flex: 1 1 40%;
+        justify-content: center;
+        text-align: center;
+        list-style-type: none;
+        text-decoration: none;
+
+        &>a:link,
+        a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+        &>a:hover,
+        a:active {
+            background-color: red;
+        }
+    }
+}
+li:nth-child(3) {
+padding-top: 50px;
+}
+li:nth-child(4) {
+    padding-top: 50px;
+    }
